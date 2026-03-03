@@ -1,18 +1,28 @@
 from __future__ import annotations
+import re
 import uuid
-from typing import List
+from collections import defaultdict
+from typing import Dict, List
 from .schema import Prompt
+
+
+def _normalize(text: str) -> str:
+    t = text.lower().strip()
+    t = re.sub(r"\s+", " ", t)
+    return t
 
 
 def _bucket_for_prompt(text: str) -> str:
     t = text.lower()
-    if "vs" in t or "alternative" in t:
+    if "vs" in t or "alternative" in t or "compare" in t:
         return "comparison"
-    if "best" in t or "which" in t:
+    if any(k in t for k in ["best", "which", "top", "recommend"]):
         return "decision"
-    if "what is" in t or "how" in t or "why" in t:
+    if any(k in t for k in ["what is", "how", "why", "guide", "explain"]):
         return "info"
-    return "usecase"
+    if any(k in t for k in ["for ", "use case", "workflow"]):
+        return "usecase"
+    return "info"
 
 
 def generate_prompts(seed_terms: List[str], count: int = 100) -> List[Prompt]:
@@ -48,3 +58,22 @@ def generate_prompts(seed_terms: List[str], count: int = 100) -> List[Prompt]:
         )
         i += 1
     return prompts
+
+
+def dedupe_prompts(prompts: List[Prompt]) -> List[Prompt]:
+    seen = set()
+    out: List[Prompt] = []
+    for p in prompts:
+        key = _normalize(p.prompt)
+        if key in seen:
+            continue
+        seen.add(key)
+        out.append(p)
+    return out
+
+
+def cluster_prompts(prompts: List[Prompt]) -> Dict[str, List[Prompt]]:
+    clusters: Dict[str, List[Prompt]] = defaultdict(list)
+    for p in prompts:
+        clusters[p.bucket].append(p)
+    return dict(clusters)

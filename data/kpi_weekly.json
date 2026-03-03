@@ -1,16 +1,70 @@
 {
   "models": {
-    "gpt": {
+    "openai:live": {
       "total": 20,
-      "mention_rate": 0.25,
-      "citation_rate": 0.2,
-      "recommendation_rate": 0.0
+      "mention_rate": 0.1,
+      "citation_rate": 0.05,
+      "recommendation_rate": 0.1
     },
     "claude": {
       "total": 20,
-      "mention_rate": 0.3,
-      "citation_rate": 0.2,
-      "recommendation_rate": 0.2
+      "mention_rate": 0.35,
+      "citation_rate": 0.1,
+      "recommendation_rate": 0.15
+    }
+  },
+  "by_bucket": {
+    "openai:live": {
+      "info": {
+        "total": 8,
+        "mention_rate": 0.0,
+        "citation_rate": 0.0,
+        "recommendation_rate": 0.0
+      },
+      "decision": {
+        "total": 4,
+        "mention_rate": 0.0,
+        "citation_rate": 0.0,
+        "recommendation_rate": 0.0
+      },
+      "comparison": {
+        "total": 4,
+        "mention_rate": 0.5,
+        "citation_rate": 0.25,
+        "recommendation_rate": 0.5
+      },
+      "usecase": {
+        "total": 4,
+        "mention_rate": 0.0,
+        "citation_rate": 0.0,
+        "recommendation_rate": 0.0
+      }
+    },
+    "claude": {
+      "info": {
+        "total": 8,
+        "mention_rate": 0.125,
+        "citation_rate": 0.125,
+        "recommendation_rate": 0.125
+      },
+      "decision": {
+        "total": 4,
+        "mention_rate": 0.5,
+        "citation_rate": 0.0,
+        "recommendation_rate": 0.25
+      },
+      "comparison": {
+        "total": 4,
+        "mention_rate": 0.75,
+        "citation_rate": 0.0,
+        "recommendation_rate": 0.0
+      },
+      "usecase": {
+        "total": 4,
+        "mention_rate": 0.25,
+        "citation_rate": 0.25,
+        "recommendation_rate": 0.25
+      }
     }
   }
 }

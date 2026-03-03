@@ -2,7 +2,7 @@ from __future__ import annotations
 import argparse
 from pathlib import Path
 from .io_utils import read_json, write_json
-from .intent_engine import generate_prompts
+from .intent_engine import generate_prompts, dedupe_prompts, cluster_prompts
 from .model_testing_engine import run_scan
 from .reporting import compute_weekly_kpi, render_weekly_report
 from .feedback_orchestrator import suggest_actions
@@ -12,10 +12,12 @@ from .schema import Prompt, ScanResult
 def _project_paths(base: Path):
     return {
         "prompts": base / "data" / "prompts.json",
+        "prompt_clusters": base / "data" / "prompt_clusters.json",
         "scans": base / "data" / "scans.json",
         "kpi": base / "data" / "kpi_weekly.json",
         "report": base / "docs" / "weekly_report.txt",
         "actions": base / "docs" / "weekly_actions.json",
+        "adapter": base / "data" / "adapter_config.json",
     }
 
 
@@ -27,6 +29,7 @@ def cmd_init(args):
         "project": args.project,
         "domain": args.domain,
         "brand": args.brand,
+        "brand_terms": [args.brand, args.domain],
     }
     write_json(base / "data" / "project.json", cfg)
     print(f"Initialized GEO project at {base}")
@@ -36,9 +39,29 @@ def cmd_prompts_generate(args):
     base = Path(args.cwd).resolve()
     paths = _project_paths(base)
     seeds = [s.strip() for s in args.seed.split(",") if s.strip()]
-    prompts = [p.to_dict() for p in generate_prompts(seeds, args.count)]
-    write_json(paths["prompts"], prompts)
-    print(f"Generated {len(prompts)} prompts -> {paths['prompts']}")
+    prompts_raw = generate_prompts(seeds, args.count)
+    prompts = dedupe_prompts(prompts_raw)
+
+    write_json(paths["prompts"], [p.to_dict() for p in prompts])
+
+    clusters = cluster_prompts(prompts)
+    cluster_payload = {k: [p.to_dict() for p in v] for k, v in clusters.items()}
+    write_json(paths["prompt_clusters"], cluster_payload)
+
+    print(f"Generated {len(prompts_raw)} prompts, deduped to {len(prompts)} -> {paths['prompts']}")
+    print(f"Clusters -> {paths['prompt_clusters']}")
+
+
+def cmd_adapter_set(args):
+    base = Path(args.cwd).resolve()
+    paths = _project_paths(base)
+    payload = {
+        "base_url": args.base_url,
+        "api_key": args.api_key,
+        "model": args.model,
+    }
+    write_json(paths["adapter"], payload)
+    print(f"Adapter config saved -> {paths['adapter']}")
 
 
 def cmd_scan_run(args):
@@ -47,7 +70,12 @@ def cmd_scan_run(args):
     prompts_raw = read_json(paths["prompts"], [])
     prompts = [Prompt(**p) for p in prompts_raw]
     models = [m.strip() for m in args.models.split(",") if m.strip()]
-    scans = [s.to_dict() for s in run_scan(models, prompts)]
+
+    project = read_json(base / "data" / "project.json", {})
+    brand_terms = project.get("brand_terms", [project.get("brand", ""), project.get("domain", "")])
+
+    adapter = read_json(paths["adapter"], {})
+    scans = [s.to_dict() for s in run_scan(models, prompts, brand_terms=brand_terms, adapter_config=adapter)]
     write_json(paths["scans"], scans)
     print(f"Scanned {len(prompts)} prompts x {len(models)} models -> {paths['scans']}")
 
@@ -57,13 +85,15 @@ def cmd_report_weekly(args):
     paths = _project_paths(base)
     scans_raw = read_json(paths["scans"], [])
     scans = [ScanResult(**s) for s in scans_raw]
-    kpi = compute_weekly_kpi(scans)
+
+    prompts_raw = read_json(paths["prompts"], [])
+    prompts = [Prompt(**p) for p in prompts_raw]
+
+    kpi = compute_weekly_kpi(scans, prompts)
     write_json(paths["kpi"], kpi)
     txt = render_weekly_report(kpi)
     paths["report"].write_text(txt, encoding="utf-8")
 
-    prompts_raw = read_json(paths["prompts"], [])
-    prompts = [Prompt(**p) for p in prompts_raw]
     actions = suggest_actions(prompts, scans)
     write_json(paths["actions"], actions)
 
@@ -88,6 +118,14 @@ def main():
     p_generate.add_argument("--seed", required=True, help="comma separated seed terms")
     p_generate.add_argument("--count", type=int, default=100)
     p_generate.set_defaults(func=cmd_prompts_generate)
+
+    p_adapter = sub.add_parser("adapter")
+    sub_adapter = p_adapter.add_subparsers(dest="adapter_cmd", required=True)
+    p_adapter_set = sub_adapter.add_parser("set")
+    p_adapter_set.add_argument("--base-url", required=True)
+    p_adapter_set.add_argument("--api-key", required=True)
+    p_adapter_set.add_argument("--model", required=True)
+    p_adapter_set.set_defaults(func=cmd_adapter_set)
 
     p_scan = sub.add_parser("scan")
     sub_scan = p_scan.add_subparsers(dest="scan_cmd", required=True)

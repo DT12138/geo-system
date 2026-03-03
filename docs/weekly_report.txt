@@ -1,14 +1,26 @@
 GEO Weekly Report
-========================================
+==================================================
 
-Model: gpt
+Model: openai:live
 - Total prompts: 20
-- Mention rate: 25.0%
-- Citation rate: 20.0%
-- Recommendation rate: 0.0%
+- Mention rate: 10.0%
+- Citation rate: 5.0%
+- Recommendation rate: 10.0%
+
+  By bucket:
+  - comparison: mention 50.0% | citation 25.0% | recommendation 50.0%
+  - decision: mention 0.0% | citation 0.0% | recommendation 0.0%
+  - info: mention 0.0% | citation 0.0% | recommendation 0.0%
+  - usecase: mention 0.0% | citation 0.0% | recommendation 0.0%
 
 Model: claude
 - Total prompts: 20
-- Mention rate: 30.0%
-- Citation rate: 20.0%
-- Recommendation rate: 20.0%
+- Mention rate: 35.0%
+- Citation rate: 10.0%
+- Recommendation rate: 15.0%
+
+  By bucket:
+  - comparison: mention 75.0% | citation 0.0% | recommendation 0.0%
+  - decision: mention 50.0% | citation 0.0% | recommendation 25.0%
+  - info: mention 12.5% | citation 12.5% | recommendation 12.5%
+  - usecase: mention 25.0% | citation 25.0% | recommendation 25.0%

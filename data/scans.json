@@ -1,8 +1,47 @@
 [
   {
-    "scan_id": "gpt-1",
-    "model": "gpt",
-    "prompt_id": "6f985abf-1e68-44c8-bc91-838568269300",
+    "scan_id": "openai:live-d43dfd94",
+    "model": "openai:live",
+    "prompt_id": "d43dfd94-cfca-4bdf-8466-696f48c89135",
+    "mentioned": false,
+    "cited": false,
+    "recommended": false,
+    "position": 0,
+    "sentiment": "neutral",
+    "competitors": [],
+    "excerpt": "**3D** means **three-dimensional**: something that has **length, width, and depth** (or height), unlike 2D, which has only length and width.    Examples: a cube, a sphere, or a 3D movie/game world.",
+    "ts": "2026-03-03T15:32:52.568054+00:00"
+  },
+  {
+    "scan_id": "openai:live-e736b3e9",
+    "model": "openai:live",
+    "prompt_id": "e736b3e9-44a1-4f5a-900a-35e5dcd52856",
+    "mentioned": false,
+    "cited": false,
+    "recommended": false,
+    "position": 0,
+    "sentiment": "neutral",
+    "competitors": [],
+    "excerpt": "“AI 3D” usually means AI systems that **create, reconstruct, or understand 3D objects/scenes**.  Basic idea:  1. **Training on lots of data**    - The model learns from **3D models**, **photos from many angles**, **depth maps**, or **video*",
+    "ts": "2026-03-03T15:33:04.343128+00:00"
+  },
+  {
+    "scan_id": "openai:live-c189adad",
+    "model": "openai:live",
+    "prompt_id": "c189adad-455b-4a60-b41b-726fd2cb65dc",
+    "mentioned": false,
+    "cited": false,
+    "recommended": false,
+    "position": 0,
+    "sentiment": "neutral",
+    "competitors": [],
+    "excerpt": "Text-to-3D is useful because it makes 3D creation much faster and more accessible.  Key reasons to use it:  - **Speed:** Generate 3D concepts in minutes instead of hours/days of manual modeling.   - **Lower skill barrier:** Non-experts can ",
+    "ts": "2026-03-03T15:33:17.620753+00:00"
+  },
+  {
+    "scan_id": "openai:live-406197e0",
+    "model": "openai:live",
+    "prompt_id": "406197e0-1b1f-4048-aef1-9ad2c94708f8",
     "mentioned": false,
     "cited": false,
     "recommended": false,
@@ -12,328 +51,13 @@
       "meshy",
       "kaedim"
     ],
-    "excerpt": "Brand not mentioned.",
-    "ts": "2026-03-03T14:53:53.358902+00:00"
+    "excerpt": "Error: URLError. Fallback simulated response for prompt: Best tools for image to 3d",
+    "ts": "2026-03-03T15:33:22.643162+00:00"
   },
   {
-    "scan_id": "gpt-2",
-    "model": "gpt",
-    "prompt_id": "39de6739-a4e0-4550-a87c-fabd30493c7f",
-    "mentioned": false,
-    "cited": false,
-    "recommended": false,
-    "position": 0,
-    "sentiment": "neutral",
-    "competitors": [
-      "meshy",
-      "kaedim"
-    ],
-    "excerpt": "Brand not mentioned.",
-    "ts": "2026-03-03T14:53:53.359273+00:00"
-  },
-  {
-    "scan_id": "gpt-3",
-    "model": "gpt",
-    "prompt_id": "41a54f75-50cb-4c36-a10d-f3e9d02ea10b",
-    "mentioned": false,
-    "cited": false,
-    "recommended": false,
-    "position": 0,
-    "sentiment": "neutral",
-    "competitors": [
-      "meshy",
-      "kaedim"
-    ],
-    "excerpt": "Brand not mentioned.",
-    "ts": "2026-03-03T14:53:53.359283+00:00"
-  },
-  {
-    "scan_id": "gpt-4",
-    "model": "gpt",
-    "prompt_id": "fe3dbc97-220d-4dc7-83dc-a689b4f12fde",
-    "mentioned": false,
-    "cited": false,
-    "recommended": false,
-    "position": 0,
-    "sentiment": "neutral",
-    "competitors": [
-      "meshy",
-      "kaedim"
-    ],
-    "excerpt": "Brand not mentioned.",
-    "ts": "2026-03-03T14:53:53.359296+00:00"
-  },
-  {
-    "scan_id": "gpt-5",
-    "model": "gpt",
-    "prompt_id": "dea80209-cd8d-4f01-a958-7cd1107446de",
-    "mentioned": true,
-    "cited": true,
-    "recommended": false,
-    "position": 1,
-    "sentiment": "positive",
-    "competitors": [
-      "meshy"
-    ],
-    "excerpt": "Brand mentioned in answer.",
-    "ts": "2026-03-03T14:53:53.359303+00:00"
-  },
-  {
-    "scan_id": "gpt-6",
-    "model": "gpt",
-    "prompt_id": "285e8cf5-da5b-4f95-955a-f46418fb2559",
-    "mentioned": true,
-    "cited": false,
-    "recommended": false,
-    "position": 1,
-    "sentiment": "positive",
-    "competitors": [
-      "meshy"
-    ],
-    "excerpt": "Brand mentioned in answer.",
-    "ts": "2026-03-03T14:53:53.359310+00:00"
-  },
-  {
-    "scan_id": "gpt-7",
-    "model": "gpt",
-    "prompt_id": "5cf2fac4-4f2a-4dee-8770-5e08884d6559",
-    "mentioned": true,
-    "cited": true,
-    "recommended": false,
-    "position": 1,
-    "sentiment": "positive",
-    "competitors": [
-      "meshy"
-    ],
-    "excerpt": "Brand mentioned in answer.",
-    "ts": "2026-03-03T14:53:53.359316+00:00"
-  },
-  {
-    "scan_id": "gpt-8",
-    "model": "gpt",
-    "prompt_id": "2563a121-7f27-48dd-a230-578225d32bde",
-    "mentioned": false,
-    "cited": false,
-    "recommended": false,
-    "position": 0,
-    "sentiment": "neutral",
-    "competitors": [
-      "meshy",
-      "kaedim"
-    ],
-    "excerpt": "Brand not mentioned.",
-    "ts": "2026-03-03T14:53:53.359321+00:00"
-  },
-  {
-    "scan_id": "gpt-9",
-    "model": "gpt",
-    "prompt_id": "af91c2c4-e17a-4753-acab-f7a1c3da7d94",
-    "mentioned": false,
-    "cited": false,
-    "recommended": false,
-    "position": 0,
-    "sentiment": "neutral",
-    "competitors": [
-      "meshy",
-      "kaedim"
-    ],
-    "excerpt": "Brand not mentioned.",
-    "ts": "2026-03-03T14:53:53.359327+00:00"
-  },
-  {
-    "scan_id": "gpt-10",
-    "model": "gpt",
-    "prompt_id": "56f553eb-1709-4d73-867e-6cb848a49399",
-    "mentioned": false,
-    "cited": false,
-    "recommended": false,
-    "position": 0,
-    "sentiment": "neutral",
-    "competitors": [
-      "meshy",
-      "kaedim"
-    ],
-    "excerpt": "Brand not mentioned.",
-    "ts": "2026-03-03T14:53:53.359333+00:00"
-  },
-  {
-    "scan_id": "gpt-11",
-    "model": "gpt",
-    "prompt_id": "aebb94e4-d81f-42d2-b9cc-8a4afcb6f835",
-    "mentioned": false,
-    "cited": false,
-    "recommended": false,
-    "position": 0,
-    "sentiment": "neutral",
-    "competitors": [
-      "meshy",
-      "kaedim"
-    ],
-    "excerpt": "Brand not mentioned.",
-    "ts": "2026-03-03T14:53:53.359339+00:00"
-  },
-  {
-    "scan_id": "gpt-12",
-    "model": "gpt",
-    "prompt_id": "9c2d4db9-3387-4d02-a2fe-44d26c9c7389",
-    "mentioned": false,
-    "cited": false,
-    "recommended": false,
-    "position": 0,
-    "sentiment": "neutral",
-    "competitors": [
-      "meshy",
-      "kaedim"
-    ],
-    "excerpt": "Brand not mentioned.",
-    "ts": "2026-03-03T14:53:53.359345+00:00"
-  },
-  {
-    "scan_id": "gpt-13",
-    "model": "gpt",
-    "prompt_id": "f1a983da-996e-4674-aed8-463f9c4647c9",
-    "mentioned": false,
-    "cited": false,
-    "recommended": false,
-    "position": 0,
-    "sentiment": "neutral",
-    "competitors": [
-      "meshy",
-      "kaedim"
-    ],
-    "excerpt": "Brand not mentioned.",
-    "ts": "2026-03-03T14:53:53.359350+00:00"
-  },
-  {
-    "scan_id": "gpt-14",
-    "model": "gpt",
-    "prompt_id": "e1b6de1d-3106-4bdf-b271-e45bda40569b",
-    "mentioned": false,
-    "cited": false,
-    "recommended": false,
-    "position": 0,
-    "sentiment": "neutral",
-    "competitors": [
-      "meshy",
-      "kaedim"
-    ],
-    "excerpt": "Brand not mentioned.",
-    "ts": "2026-03-03T14:53:53.359356+00:00"
-  },
-  {
-    "scan_id": "gpt-15",
-    "model": "gpt",
-    "prompt_id": "9cad31cb-6fcc-4195-88f3-10f03274ed64",
-    "mentioned": false,
-    "cited": false,
-    "recommended": false,
-    "position": 0,
-    "sentiment": "neutral",
-    "competitors": [
-      "meshy",
-      "kaedim"
-    ],
-    "excerpt": "Brand not mentioned.",
-    "ts": "2026-03-03T14:53:53.359362+00:00"
-  },
-  {
-    "scan_id": "gpt-16",
-    "model": "gpt",
-    "prompt_id": "c04c8f1b-9bfb-4fec-a9a8-1b36366f24ac",
-    "mentioned": true,
-    "cited": true,
-    "recommended": false,
-    "position": 1,
-    "sentiment": "positive",
-    "competitors": [
-      "meshy"
-    ],
-    "excerpt": "Brand mentioned in answer.",
-    "ts": "2026-03-03T14:53:53.359368+00:00"
-  },
-  {
-    "scan_id": "gpt-17",
-    "model": "gpt",
-    "prompt_id": "42cec089-6172-48df-97f2-80fddc038585",
-    "mentioned": false,
-    "cited": false,
-    "recommended": false,
-    "position": 0,
-    "sentiment": "neutral",
-    "competitors": [
-      "meshy",
-      "kaedim"
-    ],
-    "excerpt": "Brand not mentioned.",
-    "ts": "2026-03-03T14:53:53.359373+00:00"
-  },
-  {
-    "scan_id": "gpt-18",
-    "model": "gpt",
-    "prompt_id": "08795229-de4e-4c07-b0ae-e29d6a35745a",
-    "mentioned": true,
-    "cited": true,
-    "recommended": false,
-    "position": 1,
-    "sentiment": "positive",
-    "competitors": [
-      "meshy"
-    ],
-    "excerpt": "Brand mentioned in answer.",
-    "ts": "2026-03-03T14:53:53.359379+00:00"
-  },
-  {
-    "scan_id": "gpt-19",
-    "model": "gpt",
-    "prompt_id": "a9216f74-3706-403d-9cd1-a37ad9f3aba9",
-    "mentioned": false,
-    "cited": false,
-    "recommended": false,
-    "position": 0,
-    "sentiment": "neutral",
-    "competitors": [
-      "meshy",
-      "kaedim"
-    ],
-    "excerpt": "Brand not mentioned.",
-    "ts": "2026-03-03T14:53:53.359385+00:00"
-  },
-  {
-    "scan_id": "gpt-20",
-    "model": "gpt",
-    "prompt_id": "42cd9562-3ce3-49a4-a6dd-d95025148374",
-    "mentioned": false,
-    "cited": false,
-    "recommended": false,
-    "position": 0,
-    "sentiment": "neutral",
-    "competitors": [
-      "meshy",
-      "kaedim"
-    ],
-    "excerpt": "Brand not mentioned.",
-    "ts": "2026-03-03T14:53:53.359391+00:00"
-  },
-  {
-    "scan_id": "claude-1",
-    "model": "claude",
-    "prompt_id": "6f985abf-1e68-44c8-bc91-838568269300",
-    "mentioned": false,
-    "cited": false,
-    "recommended": false,
-    "position": 0,
-    "sentiment": "neutral",
-    "competitors": [
-      "meshy",
-      "kaedim"
-    ],
-    "excerpt": "Brand not mentioned.",
-    "ts": "2026-03-03T14:53:53.359399+00:00"
-  },
-  {
-    "scan_id": "claude-2",
-    "model": "claude",
-    "prompt_id": "39de6739-a4e0-4550-a87c-fabd30493c7f",
+    "scan_id": "openai:live-4a12caf1",
+    "model": "openai:live",
+    "prompt_id": "4a12caf1-c28d-465d-b984-906b30cd0171",
     "mentioned": true,
     "cited": false,
     "recommended": true,
@@ -342,77 +66,13 @@
     "competitors": [
       "meshy"
     ],
-    "excerpt": "Brand mentioned in answer.",
-    "ts": "2026-03-03T14:53:53.359405+00:00"
+    "excerpt": "Error: URLError. Fallback simulated response for prompt: 3d alternatives",
+    "ts": "2026-03-03T15:33:27.659423+00:00"
   },
   {
-    "scan_id": "claude-3",
-    "model": "claude",
-    "prompt_id": "41a54f75-50cb-4c36-a10d-f3e9d02ea10b",
-    "mentioned": false,
-    "cited": false,
-    "recommended": false,
-    "position": 0,
-    "sentiment": "neutral",
-    "competitors": [
-      "meshy",
-      "kaedim"
-    ],
-    "excerpt": "Brand not mentioned.",
-    "ts": "2026-03-03T14:53:53.359411+00:00"
-  },
-  {
-    "scan_id": "claude-4",
-    "model": "claude",
-    "prompt_id": "fe3dbc97-220d-4dc7-83dc-a689b4f12fde",
-    "mentioned": false,
-    "cited": false,
-    "recommended": false,
-    "position": 0,
-    "sentiment": "neutral",
-    "competitors": [
-      "meshy",
-      "kaedim"
-    ],
-    "excerpt": "Brand not mentioned.",
-    "ts": "2026-03-03T14:53:53.359417+00:00"
-  },
-  {
-    "scan_id": "claude-5",
-    "model": "claude",
-    "prompt_id": "dea80209-cd8d-4f01-a958-7cd1107446de",
-    "mentioned": false,
-    "cited": false,
-    "recommended": false,
-    "position": 0,
-    "sentiment": "neutral",
-    "competitors": [
-      "meshy",
-      "kaedim"
-    ],
-    "excerpt": "Brand not mentioned.",
-    "ts": "2026-03-03T14:53:53.359425+00:00"
-  },
-  {
-    "scan_id": "claude-6",
-    "model": "claude",
-    "prompt_id": "285e8cf5-da5b-4f95-955a-f46418fb2559",
-    "mentioned": false,
-    "cited": false,
-    "recommended": false,
-    "position": 0,
-    "sentiment": "neutral",
-    "competitors": [
-      "meshy",
-      "kaedim"
-    ],
-    "excerpt": "Brand not mentioned.",
-    "ts": "2026-03-03T14:53:53.359432+00:00"
-  },
-  {
-    "scan_id": "claude-7",
-    "model": "claude",
-    "prompt_id": "5cf2fac4-4f2a-4dee-8770-5e08884d6559",
+    "scan_id": "openai:live-88e26c84",
+    "model": "openai:live",
+    "prompt_id": "88e26c84-9403-4bf0-b283-95368a6fdd16",
     "mentioned": true,
     "cited": true,
     "recommended": true,
@@ -421,13 +81,282 @@
     "competitors": [
       "meshy"
     ],
-    "excerpt": "Brand mentioned in answer.",
-    "ts": "2026-03-03T14:53:53.359441+00:00"
+    "excerpt": "Error: URLError. Fallback simulated response for prompt: ai 3d vs competitors",
+    "ts": "2026-03-03T15:33:32.679077+00:00"
   },
   {
-    "scan_id": "claude-8",
+    "scan_id": "openai:live-cea8aebe",
+    "model": "openai:live",
+    "prompt_id": "cea8aebe-6416-4a95-b49f-a0c7897d333d",
+    "mentioned": false,
+    "cited": false,
+    "recommended": false,
+    "position": 0,
+    "sentiment": "neutral",
+    "competitors": [],
+    "excerpt": "Yes—sometimes, but usually as a starting point, not a final production asset.  ## Good for - **Concepting / ideation** - **Rapid prototyping** - **Background props** - **Placeholder assets** - **Generating base meshes** to refine manually  ",
+    "ts": "2026-03-03T15:33:42.739678+00:00"
+  },
+  {
+    "scan_id": "openai:live-4053d4cd",
+    "model": "openai:live",
+    "prompt_id": "4053d4cd-c893-436b-87b3-c102ff1d3e2a",
+    "mentioned": false,
+    "cited": false,
+    "recommended": false,
+    "position": 0,
+    "sentiment": "neutral",
+    "competitors": [],
+    "excerpt": "Yes—**it can be very good for e‑commerce**, with some caveats.  ### Where it helps - **Higher conversion**: interactive 3D/AR often improves buyer confidence. - **Lower returns**: better size/shape understanding can reduce “not as expected”",
+    "ts": "2026-03-03T15:33:54.409536+00:00"
+  },
+  {
+    "scan_id": "openai:live-4c33bd49",
+    "model": "openai:live",
+    "prompt_id": "4c33bd49-d3ad-4c9d-afe2-b9e146ace919",
+    "mentioned": false,
+    "cited": false,
+    "recommended": false,
+    "position": 0,
+    "sentiment": "neutral",
+    "competitors": [
+      "meshy",
+      "kaedim",
+      "luma"
+    ],
+    "excerpt": "Several AIs can do 3D, depending on what you mean:  - **Text/image to 3D models**   - **Luma AI / Genie**   - **Tripo AI**   - **Meshy**   - **Rodin**   - **Masterpiece X**  - **3D scene generation / NeRF / Gaussian splats**   - **Luma AI**",
+    "ts": "2026-03-03T15:34:02.092204+00:00"
+  },
+  {
+    "scan_id": "openai:live-66444712",
+    "model": "openai:live",
+    "prompt_id": "66444712-9962-4601-a79e-05ee1c849f55",
+    "mentioned": false,
+    "cited": false,
+    "recommended": false,
+    "position": 0,
+    "sentiment": "neutral",
+    "competitors": [],
+    "excerpt": "A good way is to pick by **use case first**, then compare tools on a few practical criteria.  ### 1) Start with your main task - **Text/image → 3D model** - **3D asset generation** (props, characters) - **Retopo/UV/rigging** - **Animation /",
+    "ts": "2026-03-03T15:34:31.258661+00:00"
+  },
+  {
+    "scan_id": "openai:live-464323bc",
+    "model": "openai:live",
+    "prompt_id": "464323bc-f0f0-4ca5-8684-fc84d24e4691",
+    "mentioned": false,
+    "cited": false,
+    "recommended": false,
+    "position": 0,
+    "sentiment": "neutral",
+    "competitors": [],
+    "excerpt": "**Text-to-3D** is a type of AI that creates a **3D model** from a written prompt.  You describe an object or scene in words (for example, “a futuristic red motorcycle”), and the system generates a 3D asset—often including shape, texture, an",
+    "ts": "2026-03-03T15:34:37.627019+00:00"
+  },
+  {
+    "scan_id": "openai:live-7f145455",
+    "model": "openai:live",
+    "prompt_id": "7f145455-f388-439a-85f0-e0069ba84115",
+    "mentioned": false,
+    "cited": false,
+    "recommended": false,
+    "position": 0,
+    "sentiment": "neutral",
+    "competitors": [],
+    "excerpt": "“Image to 3D” means estimating a 3D shape and appearance from one or more 2D images.  ### Basic idea A 2D image loses depth, so the system has to **infer** the missing 3D information using: - learned patterns from training data, - geometry ",
+    "ts": "2026-03-03T15:34:50.116197+00:00"
+  },
+  {
+    "scan_id": "openai:live-dad744aa",
+    "model": "openai:live",
+    "prompt_id": "dad744aa-247d-4303-b3c7-76b034e3c477",
+    "mentioned": false,
+    "cited": false,
+    "recommended": false,
+    "position": 0,
+    "sentiment": "neutral",
+    "competitors": [],
+    "excerpt": "Using 3D is useful when **depth and spatial relationships matter**.   Key reasons:  - **More realistic visualization** (products, buildings, anatomy, games). - **Better understanding of complex shapes/layouts** than 2D. - **Simulation befor",
+    "ts": "2026-03-03T15:34:58.310769+00:00"
+  },
+  {
+    "scan_id": "openai:live-46ecc1af",
+    "model": "openai:live",
+    "prompt_id": "46ecc1af-b320-4cef-ad2d-8234ebc2e912",
+    "mentioned": false,
+    "cited": false,
+    "recommended": false,
+    "position": 0,
+    "sentiment": "neutral",
+    "competitors": [
+      "meshy",
+      "luma"
+    ],
+    "excerpt": "If you mean **best AI tools for 3D creation**, the top ones right now are:  ### AI text/image → 3D - **Meshy** — very popular for generating 3D models from text or images; good for game assets. - **Tripo AI** — fast text-to-3D / image-to-3D",
+    "ts": "2026-03-03T15:35:09.939285+00:00"
+  },
+  {
+    "scan_id": "openai:live-2b822845",
+    "model": "openai:live",
+    "prompt_id": "2b822845-f36a-4403-81f9-723aae4c9312",
+    "mentioned": false,
+    "cited": false,
+    "recommended": false,
+    "position": 0,
+    "sentiment": "neutral",
+    "competitors": [
+      "meshy",
+      "kaedim",
+      "spline",
+      "luma"
+    ],
+    "excerpt": "Here are solid **text-to-3D alternatives** (depending on what you need):  - **Meshy** – Fast text/image-to-3D generation, supports textured meshes and export for game engines.   - **Luma AI (Genie)** – Text-to-3D for quick concept assets an",
+    "ts": "2026-03-03T15:35:25.135979+00:00"
+  },
+  {
+    "scan_id": "openai:live-c77107c6",
+    "model": "openai:live",
+    "prompt_id": "c77107c6-ade2-45bd-8afa-907b3f108b61",
+    "mentioned": false,
+    "cited": false,
+    "recommended": false,
+    "position": 0,
+    "sentiment": "neutral",
+    "competitors": [
+      "meshy",
+      "kaedim",
+      "luma"
+    ],
+    "excerpt": "If you mean **Image-to-3D products/tools**, the main competitors are usually:  | Product | Strengths | Weaknesses | |---|---|---| | **Tripo AI** | Fast single-image to 3D, decent texture generation, easy workflow | Quality can vary on compl",
+    "ts": "2026-03-03T15:35:40.087239+00:00"
+  },
+  {
+    "scan_id": "openai:live-c1b2deb1",
+    "model": "openai:live",
+    "prompt_id": "c1b2deb1-8d56-42d5-ad22-ff691212ca88",
+    "mentioned": false,
+    "cited": false,
+    "recommended": false,
+    "position": 0,
+    "sentiment": "neutral",
+    "competitors": [],
+    "excerpt": "Yes—3D is very good for game assets, and it’s the standard for most modern games.  **Why it’s good:** - Works from many camera angles - Reusable/animatable (rigging, retargeting) - Efficient with LODs and optimization - Fits well with moder",
+    "ts": "2026-03-03T15:35:49.506685+00:00"
+  },
+  {
+    "scan_id": "openai:live-09be837b",
+    "model": "openai:live",
+    "prompt_id": "09be837b-7d01-4c9f-99d8-4a53aeae3c0c",
+    "mentioned": false,
+    "cited": false,
+    "recommended": false,
+    "position": 0,
+    "sentiment": "neutral",
+    "competitors": [],
+    "excerpt": "Yes—**AI-generated 3D can be very good for e-commerce**, especially for products where visuals matter (furniture, fashion, electronics, home decor).  ### Benefits - **Higher conversion rates** from interactive 3D/AR product views   - **Lowe",
+    "ts": "2026-03-03T15:35:59.134724+00:00"
+  },
+  {
+    "scan_id": "openai:live-d49575c0",
+    "model": "openai:live",
+    "prompt_id": "d49575c0-dadc-4b15-ba93-525894c33bed",
+    "mentioned": false,
+    "cited": false,
+    "recommended": false,
+    "position": 0,
+    "sentiment": "neutral",
+    "competitors": [
+      "meshy",
+      "kaedim",
+      "luma"
+    ],
+    "excerpt": "Several AIs can do **text-to-3D**, though quality and output type vary:  - **OpenAI Shap-E** — generates simple 3D objects from text or images. - **Meshy** — popular web tool for text-to-3D and texturing. - **Luma AI / Genie** — creates 3D ",
+    "ts": "2026-03-03T15:36:06.504617+00:00"
+  },
+  {
+    "scan_id": "openai:live-245f42d3",
+    "model": "openai:live",
+    "prompt_id": "245f42d3-c793-4561-95a2-ece3228f78c6",
+    "mentioned": false,
+    "cited": false,
+    "recommended": false,
+    "position": 0,
+    "sentiment": "neutral",
+    "competitors": [
+      "meshy",
+      "luma"
+    ],
+    "excerpt": "Choose an image-to-3D tool based on these 6 things:  1. **Input type** - **Single image**: easiest, but less accurate. - **Multi-view / turntable photos**: better geometry and texture. - **Video input**: good middle ground.  2. **Output you",
+    "ts": "2026-03-03T15:36:18.792305+00:00"
+  },
+  {
+    "scan_id": "claude-d43dfd94",
     "model": "claude",
-    "prompt_id": "2563a121-7f27-48dd-a230-578225d32bde",
+    "prompt_id": "d43dfd94-cfca-4bdf-8466-696f48c89135",
+    "mentioned": false,
+    "cited": false,
+    "recommended": false,
+    "position": 0,
+    "sentiment": "neutral",
+    "competitors": [
+      "meshy",
+      "kaedim"
+    ],
+    "excerpt": "No direct brand mention. Prompt: What is 3d?",
+    "ts": "2026-03-03T15:36:18.792401+00:00"
+  },
+  {
+    "scan_id": "claude-e736b3e9",
+    "model": "claude",
+    "prompt_id": "e736b3e9-44a1-4f5a-900a-35e5dcd52856",
+    "mentioned": false,
+    "cited": false,
+    "recommended": false,
+    "position": 0,
+    "sentiment": "neutral",
+    "competitors": [
+      "meshy",
+      "kaedim"
+    ],
+    "excerpt": "No direct brand mention. Prompt: How does ai 3d work?",
+    "ts": "2026-03-03T15:36:18.792452+00:00"
+  },
+  {
+    "scan_id": "claude-c189adad",
+    "model": "claude",
+    "prompt_id": "c189adad-455b-4a60-b41b-726fd2cb65dc",
+    "mentioned": false,
+    "cited": false,
+    "recommended": false,
+    "position": 0,
+    "sentiment": "neutral",
+    "competitors": [
+      "meshy",
+      "kaedim"
+    ],
+    "excerpt": "No direct brand mention. Prompt: Why use text to 3d?",
+    "ts": "2026-03-03T15:36:18.792495+00:00"
+  },
+  {
+    "scan_id": "claude-406197e0",
+    "model": "claude",
+    "prompt_id": "406197e0-1b1f-4048-aef1-9ad2c94708f8",
+    "mentioned": false,
+    "cited": false,
+    "recommended": false,
+    "position": 0,
+    "sentiment": "neutral",
+    "competitors": [
+      "meshy",
+      "kaedim"
+    ],
+    "excerpt": "No direct brand mention. Prompt: Best tools for image to 3d",
+    "ts": "2026-03-03T15:36:18.792536+00:00"
+  },
+  {
+    "scan_id": "claude-4a12caf1",
+    "model": "claude",
+    "prompt_id": "4a12caf1-c28d-465d-b984-906b30cd0171",
     "mentioned": true,
     "cited": false,
     "recommended": false,
@@ -436,13 +365,91 @@
     "competitors": [
       "meshy"
     ],
-    "excerpt": "Brand mentioned in answer.",
-    "ts": "2026-03-03T14:53:53.359448+00:00"
+    "excerpt": "Tripo3D is often recommended. Prompt: 3d alternatives",
+    "ts": "2026-03-03T15:36:18.792577+00:00"
   },
   {
-    "scan_id": "claude-9",
+    "scan_id": "claude-88e26c84",
     "model": "claude",
-    "prompt_id": "af91c2c4-e17a-4753-acab-f7a1c3da7d94",
+    "prompt_id": "88e26c84-9403-4bf0-b283-95368a6fdd16",
+    "mentioned": true,
+    "cited": false,
+    "recommended": false,
+    "position": 1,
+    "sentiment": "positive",
+    "competitors": [
+      "meshy"
+    ],
+    "excerpt": "Tripo3D is often recommended. Prompt: ai 3d vs competitors",
+    "ts": "2026-03-03T15:36:18.792617+00:00"
+  },
+  {
+    "scan_id": "claude-cea8aebe",
+    "model": "claude",
+    "prompt_id": "cea8aebe-6416-4a95-b49f-a0c7897d333d",
+    "mentioned": false,
+    "cited": false,
+    "recommended": false,
+    "position": 0,
+    "sentiment": "neutral",
+    "competitors": [
+      "meshy",
+      "kaedim"
+    ],
+    "excerpt": "No direct brand mention. Prompt: Is text to 3d good for game assets?",
+    "ts": "2026-03-03T15:36:18.792657+00:00"
+  },
+  {
+    "scan_id": "claude-4053d4cd",
+    "model": "claude",
+    "prompt_id": "4053d4cd-c893-436b-87b3-c102ff1d3e2a",
+    "mentioned": false,
+    "cited": false,
+    "recommended": false,
+    "position": 0,
+    "sentiment": "neutral",
+    "competitors": [
+      "meshy",
+      "kaedim"
+    ],
+    "excerpt": "No direct brand mention. Prompt: Is image to 3d good for e-commerce?",
+    "ts": "2026-03-03T15:36:18.792696+00:00"
+  },
+  {
+    "scan_id": "claude-4c33bd49",
+    "model": "claude",
+    "prompt_id": "4c33bd49-d3ad-4c9d-afe2-b9e146ace919",
+    "mentioned": true,
+    "cited": false,
+    "recommended": true,
+    "position": 1,
+    "sentiment": "positive",
+    "competitors": [
+      "meshy"
+    ],
+    "excerpt": "Tripo3D is often recommended. Prompt: Which AI can do 3d?",
+    "ts": "2026-03-03T15:36:18.792735+00:00"
+  },
+  {
+    "scan_id": "claude-66444712",
+    "model": "claude",
+    "prompt_id": "66444712-9962-4601-a79e-05ee1c849f55",
+    "mentioned": false,
+    "cited": false,
+    "recommended": false,
+    "position": 0,
+    "sentiment": "neutral",
+    "competitors": [
+      "meshy",
+      "kaedim"
+    ],
+    "excerpt": "No direct brand mention. Prompt: How to choose ai 3d tools?",
+    "ts": "2026-03-03T15:36:18.792773+00:00"
+  },
+  {
+    "scan_id": "claude-464323bc",
+    "model": "claude",
+    "prompt_id": "464323bc-f0f0-4ca5-8684-fc84d24e4691",
     "mentioned": true,
     "cited": true,
     "recommended": true,
@@ -451,13 +458,13 @@
     "competitors": [
       "meshy"
     ],
-    "excerpt": "Brand mentioned in answer.",
-    "ts": "2026-03-03T14:53:53.359454+00:00"
+    "excerpt": "Tripo3D is often recommended. Prompt: What is text to 3d?",
+    "ts": "2026-03-03T15:36:18.792812+00:00"
   },
   {
-    "scan_id": "claude-10",
+    "scan_id": "claude-7f145455",
     "model": "claude",
-    "prompt_id": "56f553eb-1709-4d73-867e-6cb848a49399",
+    "prompt_id": "7f145455-f388-439a-85f0-e0069ba84115",
     "mentioned": false,
     "cited": false,
     "recommended": false,
@@ -467,13 +474,13 @@
       "meshy",
       "kaedim"
     ],
-    "excerpt": "Brand not mentioned.",
-    "ts": "2026-03-03T14:53:53.359460+00:00"
+    "excerpt": "No direct brand mention. Prompt: How does image to 3d work?",
+    "ts": "2026-03-03T15:36:18.792850+00:00"
   },
   {
-    "scan_id": "claude-11",
+    "scan_id": "claude-dad744aa",
     "model": "claude",
-    "prompt_id": "aebb94e4-d81f-42d2-b9cc-8a4afcb6f835",
+    "prompt_id": "dad744aa-247d-4303-b3c7-76b034e3c477",
     "mentioned": false,
     "cited": false,
     "recommended": false,
@@ -483,13 +490,60 @@
       "meshy",
       "kaedim"
     ],
-    "excerpt": "Brand not mentioned.",
-    "ts": "2026-03-03T14:53:53.359466+00:00"
+    "excerpt": "No direct brand mention. Prompt: Why use 3d?",
+    "ts": "2026-03-03T15:36:18.792888+00:00"
   },
   {
-    "scan_id": "claude-12",
+    "scan_id": "claude-46ecc1af",
     "model": "claude",
-    "prompt_id": "9c2d4db9-3387-4d02-a2fe-44d26c9c7389",
+    "prompt_id": "46ecc1af-b320-4cef-ad2d-8234ebc2e912",
+    "mentioned": false,
+    "cited": false,
+    "recommended": false,
+    "position": 0,
+    "sentiment": "neutral",
+    "competitors": [
+      "meshy",
+      "kaedim"
+    ],
+    "excerpt": "No direct brand mention. Prompt: Best tools for ai 3d",
+    "ts": "2026-03-03T15:36:18.792926+00:00"
+  },
+  {
+    "scan_id": "claude-2b822845",
+    "model": "claude",
+    "prompt_id": "2b822845-f36a-4403-81f9-723aae4c9312",
+    "mentioned": true,
+    "cited": false,
+    "recommended": false,
+    "position": 1,
+    "sentiment": "positive",
+    "competitors": [
+      "meshy"
+    ],
+    "excerpt": "Tripo3D is often recommended. Prompt: text to 3d alternatives",
+    "ts": "2026-03-03T15:36:18.792965+00:00"
+  },
+  {
+    "scan_id": "claude-c77107c6",
+    "model": "claude",
+    "prompt_id": "c77107c6-ade2-45bd-8afa-907b3f108b61",
+    "mentioned": false,
+    "cited": false,
+    "recommended": false,
+    "position": 0,
+    "sentiment": "neutral",
+    "competitors": [
+      "meshy",
+      "kaedim"
+    ],
+    "excerpt": "No direct brand mention. Prompt: image to 3d vs competitors",
+    "ts": "2026-03-03T15:36:18.793003+00:00"
+  },
+  {
+    "scan_id": "claude-c1b2deb1",
+    "model": "claude",
+    "prompt_id": "c1b2deb1-8d56-42d5-ad22-ff691212ca88",
     "mentioned": true,
     "cited": true,
     "recommended": true,
@@ -498,13 +552,13 @@
     "competitors": [
       "meshy"
     ],
-    "excerpt": "Brand mentioned in answer.",
-    "ts": "2026-03-03T14:53:53.359473+00:00"
+    "excerpt": "Tripo3D is often recommended. Prompt: Is 3d good for game assets?",
+    "ts": "2026-03-03T15:36:18.793041+00:00"
   },
   {
-    "scan_id": "claude-13",
+    "scan_id": "claude-09be837b",
     "model": "claude",
-    "prompt_id": "f1a983da-996e-4674-aed8-463f9c4647c9",
+    "prompt_id": "09be837b-7d01-4c9f-99d8-4a53aeae3c0c",
     "mentioned": false,
     "cited": false,
     "recommended": false,
@@ -514,108 +568,28 @@
       "meshy",
       "kaedim"
     ],
-    "excerpt": "Brand not mentioned.",
-    "ts": "2026-03-03T14:53:53.359479+00:00"
+    "excerpt": "No direct brand mention. Prompt: Is ai 3d good for e-commerce?",
+    "ts": "2026-03-03T15:36:18.793079+00:00"
   },
   {
-    "scan_id": "claude-14",
+    "scan_id": "claude-d49575c0",
     "model": "claude",
-    "prompt_id": "e1b6de1d-3106-4bdf-b271-e45bda40569b",
-    "mentioned": false,
-    "cited": false,
-    "recommended": false,
-    "position": 0,
-    "sentiment": "neutral",
-    "competitors": [
-      "meshy",
-      "kaedim"
-    ],
-    "excerpt": "Brand not mentioned.",
-    "ts": "2026-03-03T14:53:53.359485+00:00"
-  },
-  {
-    "scan_id": "claude-15",
-    "model": "claude",
-    "prompt_id": "9cad31cb-6fcc-4195-88f3-10f03274ed64",
-    "mentioned": false,
-    "cited": false,
-    "recommended": false,
-    "position": 0,
-    "sentiment": "neutral",
-    "competitors": [
-      "meshy",
-      "kaedim"
-    ],
-    "excerpt": "Brand not mentioned.",
-    "ts": "2026-03-03T14:53:53.359491+00:00"
-  },
-  {
-    "scan_id": "claude-16",
-    "model": "claude",
-    "prompt_id": "c04c8f1b-9bfb-4fec-a9a8-1b36366f24ac",
-    "mentioned": false,
-    "cited": false,
-    "recommended": false,
-    "position": 0,
-    "sentiment": "neutral",
-    "competitors": [
-      "meshy",
-      "kaedim"
-    ],
-    "excerpt": "Brand not mentioned.",
-    "ts": "2026-03-03T14:53:53.359497+00:00"
-  },
-  {
-    "scan_id": "claude-17",
-    "model": "claude",
-    "prompt_id": "42cec089-6172-48df-97f2-80fddc038585",
-    "mentioned": false,
-    "cited": false,
-    "recommended": false,
-    "position": 0,
-    "sentiment": "neutral",
-    "competitors": [
-      "meshy",
-      "kaedim"
-    ],
-    "excerpt": "Brand not mentioned.",
-    "ts": "2026-03-03T14:53:53.359502+00:00"
-  },
-  {
-    "scan_id": "claude-18",
-    "model": "claude",
-    "prompt_id": "08795229-de4e-4c07-b0ae-e29d6a35745a",
-    "mentioned": false,
-    "cited": false,
-    "recommended": false,
-    "position": 0,
-    "sentiment": "neutral",
-    "competitors": [
-      "meshy",
-      "kaedim"
-    ],
-    "excerpt": "Brand not mentioned.",
-    "ts": "2026-03-03T14:53:53.359508+00:00"
-  },
-  {
-    "scan_id": "claude-19",
-    "model": "claude",
-    "prompt_id": "a9216f74-3706-403d-9cd1-a37ad9f3aba9",
+    "prompt_id": "d49575c0-dadc-4b15-ba93-525894c33bed",
     "mentioned": true,
-    "cited": true,
+    "cited": false,
     "recommended": false,
     "position": 1,
     "sentiment": "positive",
     "competitors": [
       "meshy"
     ],
-    "excerpt": "Brand mentioned in answer.",
-    "ts": "2026-03-03T14:53:53.359515+00:00"
+    "excerpt": "Tripo3D is often recommended. Prompt: Which AI can do text to 3d?",
+    "ts": "2026-03-03T15:36:18.793131+00:00"
   },
   {
-    "scan_id": "claude-20",
+    "scan_id": "claude-245f42d3",
     "model": "claude",
-    "prompt_id": "42cd9562-3ce3-49a4-a6dd-d95025148374",
+    "prompt_id": "245f42d3-c793-4561-95a2-ece3228f78c6",
     "mentioned": false,
     "cited": false,
     "recommended": false,
@@ -625,7 +599,7 @@
       "meshy",
       "kaedim"
     ],
-    "excerpt": "Brand not mentioned.",
-    "ts": "2026-03-03T14:53:53.359524+00:00"
+    "excerpt": "No direct brand mention. Prompt: How to choose image to 3d tools?",
+    "ts": "2026-03-03T15:36:18.793164+00:00"
   }
 ]

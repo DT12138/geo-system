@@ -6,6 +6,11 @@
   },
   {
     "priority": "P0",
+    "prompt": "How does ai 3d work?",
+    "action": "Create dedicated answer page (definition + FAQ + evidence block)."
+  },
+  {
+    "priority": "P0",
     "prompt": "Why use text to 3d?",
     "action": "Create dedicated answer page (definition + FAQ + evidence block)."
   },
@@ -16,12 +21,22 @@
   },
   {
     "priority": "P0",
+    "prompt": "Is text to 3d good for game assets?",
+    "action": "Create dedicated answer page (definition + FAQ + evidence block)."
+  },
+  {
+    "priority": "P0",
+    "prompt": "Is image to 3d good for e-commerce?",
+    "action": "Create dedicated answer page (definition + FAQ + evidence block)."
+  },
+  {
+    "priority": "P0",
     "prompt": "How to choose ai 3d tools?",
     "action": "Create dedicated answer page (definition + FAQ + evidence block)."
   },
   {
     "priority": "P0",
-    "prompt": "What is text to 3d?",
+    "prompt": "How does image to 3d work?",
     "action": "Create dedicated answer page (definition + FAQ + evidence block)."
   },
   {
@@ -36,12 +51,12 @@
   },
   {
     "priority": "P0",
-    "prompt": "text to 3d alternatives",
+    "prompt": "image to 3d vs competitors",
     "action": "Create dedicated answer page (definition + FAQ + evidence block)."
   },
   {
     "priority": "P0",
-    "prompt": "Is 3d good for game assets?",
+    "prompt": "Is ai 3d good for e-commerce?",
     "action": "Create dedicated answer page (definition + FAQ + evidence block)."
   },
   {
