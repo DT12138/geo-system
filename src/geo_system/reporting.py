@@ -15,12 +15,14 @@ def compute_weekly_kpi(scans: List[ScanResult], prompts: List[Prompt] | None = N
     by_model = defaultdict(list)
     by_bucket = defaultdict(list)
     by_model_run = defaultdict(lambda: defaultdict(list))
+    by_bucket_run = defaultdict(lambda: defaultdict(lambda: defaultdict(list)))
 
     for s in scans:
         by_model[s.model].append(s)
         by_model_run[s.model][s.run_id or "no_run_id"].append(s)
         bucket = prompt_by_id.get(s.prompt_id).bucket if s.prompt_id in prompt_by_id else "unknown"
         by_bucket[(s.model, bucket)].append(s)
+        by_bucket_run[s.model][bucket][s.run_id or "no_run_id"].append(s)
 
     model_rows = {}
     for m, rows in by_model.items():
@@ -49,37 +51,57 @@ def compute_weekly_kpi(scans: List[ScanResult], prompts: List[Prompt] | None = N
         }
 
     trends = {}
+    bucket_trends = {}
     for model, run_map in by_model_run.items():
         run_ids = sorted(run_map.keys())
-        if len(run_ids) < 2:
-            continue
-        prev_rows = run_map[run_ids[-2]]
-        cur_rows = run_map[run_ids[-1]]
+        if len(run_ids) >= 2:
+            prev_rows = run_map[run_ids[-2]]
+            cur_rows = run_map[run_ids[-1]]
 
-        prev_total = len(prev_rows)
-        cur_total = len(cur_rows)
-        prev_m = _safe_rate(sum(1 for r in prev_rows if r.mentioned), prev_total)
-        cur_m = _safe_rate(sum(1 for r in cur_rows if r.mentioned), cur_total)
-        prev_c = _safe_rate(sum(1 for r in prev_rows if r.cited), prev_total)
-        cur_c = _safe_rate(sum(1 for r in cur_rows if r.cited), cur_total)
-        prev_r = _safe_rate(sum(1 for r in prev_rows if r.recommended), prev_total)
-        cur_r = _safe_rate(sum(1 for r in cur_rows if r.recommended), cur_total)
+            prev_total = len(prev_rows)
+            cur_total = len(cur_rows)
+            prev_m = _safe_rate(sum(1 for r in prev_rows if r.mentioned), prev_total)
+            cur_m = _safe_rate(sum(1 for r in cur_rows if r.mentioned), cur_total)
+            prev_c = _safe_rate(sum(1 for r in prev_rows if r.cited), prev_total)
+            cur_c = _safe_rate(sum(1 for r in cur_rows if r.cited), cur_total)
+            prev_r = _safe_rate(sum(1 for r in prev_rows if r.recommended), prev_total)
+            cur_r = _safe_rate(sum(1 for r in cur_rows if r.recommended), cur_total)
 
-        trends[model] = {
-            "prev_run_id": run_ids[-2],
-            "cur_run_id": run_ids[-1],
-            "mention_rate_prev": prev_m,
-            "mention_rate_cur": cur_m,
-            "mention_delta": round(cur_m - prev_m, 4),
-            "citation_rate_prev": prev_c,
-            "citation_rate_cur": cur_c,
-            "citation_delta": round(cur_c - prev_c, 4),
-            "recommendation_rate_prev": prev_r,
-            "recommendation_rate_cur": cur_r,
-            "recommendation_delta": round(cur_r - prev_r, 4),
-        }
+            trends[model] = {
+                "prev_run_id": run_ids[-2],
+                "cur_run_id": run_ids[-1],
+                "mention_rate_prev": prev_m,
+                "mention_rate_cur": cur_m,
+                "mention_delta": round(cur_m - prev_m, 4),
+                "citation_rate_prev": prev_c,
+                "citation_rate_cur": cur_c,
+                "citation_delta": round(cur_c - prev_c, 4),
+                "recommendation_rate_prev": prev_r,
+                "recommendation_rate_cur": cur_r,
+                "recommendation_delta": round(cur_r - prev_r, 4),
+            }
 
-    return {"models": model_rows, "by_bucket": bucket_rows, "trends": trends}
+        # bucket-level trend
+        bucket_trends[model] = {}
+        for bucket, runs in by_bucket_run[model].items():
+            bruns = sorted(runs.keys())
+            if len(bruns) < 2:
+                continue
+            prev = runs[bruns[-2]]
+            cur = runs[bruns[-1]]
+            prev_total = len(prev)
+            cur_total = len(cur)
+            pm = _safe_rate(sum(1 for r in prev if r.mentioned), prev_total)
+            cm = _safe_rate(sum(1 for r in cur if r.mentioned), cur_total)
+            bucket_trends[model][bucket] = {
+                "prev_run_id": bruns[-2],
+                "cur_run_id": bruns[-1],
+                "mention_prev": pm,
+                "mention_cur": cm,
+                "mention_delta": round(cm - pm, 4),
+            }
+
+    return {"models": model_rows, "by_bucket": bucket_rows, "trends": trends, "bucket_trends": bucket_trends}
 
 
 def render_weekly_report(kpi: Dict) -> str:
@@ -117,6 +139,16 @@ def render_weekly_report(kpi: Dict) -> str:
                 f"  - Recommendation: {t['recommendation_rate_prev']*100:.1f}% -> {t['recommendation_rate_cur']*100:.1f}% "
                 f"(delta {t['recommendation_delta']*100:+.1f}pp)"
             )
+            lines.append("")
+
+        bt = kpi.get("bucket_trends", {}).get(model, {})
+        if bt:
+            lines.append("  Bucket trend (mention):")
+            for bucket, b in sorted(bt.items()):
+                lines.append(
+                    f"  - {bucket}: {b['mention_prev']*100:.1f}% -> {b['mention_cur']*100:.1f}% "
+                    f"(delta {b['mention_delta']*100:+.1f}pp)"
+                )
             lines.append("")
 
     return "\n".join(lines)

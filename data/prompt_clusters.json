@@ -1,190 +1,190 @@
 {
   "info": [
     {
-      "id": "d43dfd94-cfca-4bdf-8466-696f48c89135",
+      "id": "84397a69-c14d-4a03-b309-75285f315e19",
       "prompt": "What is 3d?",
       "bucket": "info",
       "intent_type": "info",
       "stage": "awareness",
       "priority": "P0",
-      "owner_page": ""
+      "owner_page": "/what-is-tripo3d"
     },
     {
-      "id": "e736b3e9-44a1-4f5a-900a-35e5dcd52856",
+      "id": "2b003275-6c6a-48de-a2ba-2f751ca4810c",
       "prompt": "How does ai 3d work?",
       "bucket": "info",
       "intent_type": "info",
       "stage": "awareness",
       "priority": "P0",
-      "owner_page": ""
+      "owner_page": "/what-is-tripo3d"
     },
     {
-      "id": "c189adad-455b-4a60-b41b-726fd2cb65dc",
+      "id": "f780ff94-ac60-4788-8d2e-9074f9a1f028",
       "prompt": "Why use text to 3d?",
       "bucket": "info",
       "intent_type": "info",
       "stage": "awareness",
       "priority": "P0",
-      "owner_page": ""
+      "owner_page": "/what-is-tripo3d"
     },
     {
-      "id": "66444712-9962-4601-a79e-05ee1c849f55",
+      "id": "9dc8724b-deff-44e5-a70b-6a969a2133b1",
       "prompt": "How to choose ai 3d tools?",
       "bucket": "info",
       "intent_type": "info",
       "stage": "awareness",
       "priority": "P0",
-      "owner_page": ""
+      "owner_page": "/what-is-tripo3d"
     },
     {
-      "id": "464323bc-f0f0-4ca5-8684-fc84d24e4691",
+      "id": "16fe4f3e-f67b-464f-8cba-4fdea289e94e",
       "prompt": "What is text to 3d?",
       "bucket": "info",
       "intent_type": "info",
       "stage": "awareness",
       "priority": "P0",
-      "owner_page": ""
+      "owner_page": "/what-is-tripo3d"
     },
     {
-      "id": "7f145455-f388-439a-85f0-e0069ba84115",
+      "id": "a31a94e8-8a9f-4312-8285-4d94789c4a02",
       "prompt": "How does image to 3d work?",
       "bucket": "info",
       "intent_type": "info",
       "stage": "awareness",
       "priority": "P0",
-      "owner_page": ""
+      "owner_page": "/what-is-tripo3d"
     },
     {
-      "id": "dad744aa-247d-4303-b3c7-76b034e3c477",
+      "id": "46fc450f-ce93-48af-ad25-4581bceb4577",
       "prompt": "Why use 3d?",
       "bucket": "info",
       "intent_type": "info",
       "stage": "awareness",
       "priority": "P0",
-      "owner_page": ""
+      "owner_page": "/what-is-tripo3d"
     },
     {
-      "id": "245f42d3-c793-4561-95a2-ece3228f78c6",
+      "id": "25b68fc1-bf5c-4cd9-8e6c-5e4ba71f3681",
       "prompt": "How to choose image to 3d tools?",
       "bucket": "info",
       "intent_type": "info",
       "stage": "awareness",
       "priority": "P0",
-      "owner_page": ""
+      "owner_page": "/what-is-tripo3d"
     }
   ],
   "decision": [
     {
-      "id": "406197e0-1b1f-4048-aef1-9ad2c94708f8",
+      "id": "66d7fc9c-bae7-4b22-afd4-ad324f09284e",
       "prompt": "Best tools for image to 3d",
       "bucket": "decision",
       "intent_type": "decision",
       "stage": "consideration",
       "priority": "P0",
-      "owner_page": ""
+      "owner_page": "/best-ai-3d-tools"
     },
     {
-      "id": "4c33bd49-d3ad-4c9d-afe2-b9e146ace919",
+      "id": "17653923-ffb2-4546-9021-57f7c6e80a63",
       "prompt": "Which AI can do 3d?",
       "bucket": "decision",
       "intent_type": "decision",
       "stage": "consideration",
       "priority": "P0",
-      "owner_page": ""
+      "owner_page": "/best-ai-3d-tools"
     },
     {
-      "id": "46ecc1af-b320-4cef-ad2d-8234ebc2e912",
+      "id": "70d9d819-b7f7-4192-a63b-339c597ff042",
       "prompt": "Best tools for ai 3d",
       "bucket": "decision",
       "intent_type": "decision",
       "stage": "consideration",
       "priority": "P0",
-      "owner_page": ""
+      "owner_page": "/best-ai-3d-tools"
     },
     {
-      "id": "d49575c0-dadc-4b15-ba93-525894c33bed",
+      "id": "5f4b7656-ac3f-4314-9e30-d09b0489c0b6",
       "prompt": "Which AI can do text to 3d?",
       "bucket": "decision",
       "intent_type": "decision",
       "stage": "consideration",
       "priority": "P0",
-      "owner_page": ""
+      "owner_page": "/best-ai-3d-tools"
     }
   ],
   "comparison": [
     {
-      "id": "4a12caf1-c28d-465d-b984-906b30cd0171",
+      "id": "c940d557-4c71-42e5-8095-1767c3b7064b",
       "prompt": "3d alternatives",
       "bucket": "comparison",
       "intent_type": "comparison",
       "stage": "consideration",
       "priority": "P0",
-      "owner_page": ""
+      "owner_page": "/tripo3d-vs-meshy"
     },
     {
-      "id": "88e26c84-9403-4bf0-b283-95368a6fdd16",
+      "id": "36de0086-eef3-4717-b6a4-273de1a8f66b",
       "prompt": "ai 3d vs competitors",
       "bucket": "comparison",
       "intent_type": "comparison",
       "stage": "consideration",
       "priority": "P0",
-      "owner_page": ""
+      "owner_page": "/tripo3d-vs-meshy"
     },
     {
-      "id": "2b822845-f36a-4403-81f9-723aae4c9312",
+      "id": "3e81d1dc-52ea-449c-b018-0a481cd5146f",
       "prompt": "text to 3d alternatives",
       "bucket": "comparison",
       "intent_type": "comparison",
       "stage": "consideration",
       "priority": "P0",
-      "owner_page": ""
+      "owner_page": "/tripo3d-vs-meshy"
     },
     {
-      "id": "c77107c6-ade2-45bd-8afa-907b3f108b61",
+      "id": "1b046017-54fa-4937-8953-9083d243348a",
       "prompt": "image to 3d vs competitors",
       "bucket": "comparison",
       "intent_type": "comparison",
       "stage": "consideration",
       "priority": "P0",
-      "owner_page": ""
+      "owner_page": "/tripo3d-vs-meshy"
     }
   ],
   "usecase": [
     {
-      "id": "cea8aebe-6416-4a95-b49f-a0c7897d333d",
+      "id": "19406189-93ea-46c7-8df6-38ebffc38044",
       "prompt": "Is text to 3d good for game assets?",
       "bucket": "usecase",
       "intent_type": "usecase",
       "stage": "consideration",
       "priority": "P0",
-      "owner_page": ""
+      "owner_page": "/ai-3d-for-game-assets"
     },
     {
-      "id": "4053d4cd-c893-436b-87b3-c102ff1d3e2a",
+      "id": "c7f98828-9737-4437-ba84-e9cf395d6ffb",
       "prompt": "Is image to 3d good for e-commerce?",
       "bucket": "usecase",
       "intent_type": "usecase",
       "stage": "consideration",
       "priority": "P0",
-      "owner_page": ""
+      "owner_page": "/ai-3d-for-game-assets"
     },
     {
-      "id": "c1b2deb1-8d56-42d5-ad22-ff691212ca88",
+      "id": "5cc52643-4720-4b67-bab0-60cc42b543ba",
       "prompt": "Is 3d good for game assets?",
       "bucket": "usecase",
       "intent_type": "usecase",
       "stage": "consideration",
       "priority": "P0",
-      "owner_page": ""
+      "owner_page": "/ai-3d-for-game-assets"
     },
     {
-      "id": "09be837b-7d01-4c9f-99d8-4a53aeae3c0c",
+      "id": "b76c16b2-a225-4a13-8ac1-58c248f91995",
       "prompt": "Is ai 3d good for e-commerce?",
       "bucket": "usecase",
       "intent_type": "usecase",
       "stage": "consideration",
       "priority": "P0",
-      "owner_page": ""
+      "owner_page": "/ai-3d-for-game-assets"
     }
   ]
 }

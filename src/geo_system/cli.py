@@ -18,6 +18,7 @@ def _project_paths(base: Path):
         "report": base / "docs" / "weekly_report.txt",
         "actions": base / "docs" / "weekly_actions.json",
         "adapter": base / "data" / "adapter_config.json",
+        "owner_map": base / "data" / "owner_page_map.json",
     }
 
 
@@ -42,6 +43,10 @@ def cmd_prompts_generate(args):
     prompts_raw = generate_prompts(seeds, args.count)
     prompts = dedupe_prompts(prompts_raw)
 
+    owner_map = read_json(paths["owner_map"], {})
+    for p in prompts:
+        p.owner_page = owner_map.get(p.bucket, p.owner_page)
+
     write_json(paths["prompts"], [p.to_dict() for p in prompts])
 
     clusters = cluster_prompts(prompts)
@@ -50,6 +55,15 @@ def cmd_prompts_generate(args):
 
     print(f"Generated {len(prompts_raw)} prompts, deduped to {len(prompts)} -> {paths['prompts']}")
     print(f"Clusters -> {paths['prompt_clusters']}")
+
+
+def cmd_owner_map_set(args):
+    base = Path(args.cwd).resolve()
+    paths = _project_paths(base)
+    payload = read_json(paths["owner_map"], {})
+    payload[args.bucket] = args.page
+    write_json(paths["owner_map"], payload)
+    print(f"Owner page mapping saved: {args.bucket} -> {args.page}")
 
 
 def cmd_adapter_set(args):
@@ -129,6 +143,13 @@ def main():
     p_generate.add_argument("--seed", required=True, help="comma separated seed terms")
     p_generate.add_argument("--count", type=int, default=100)
     p_generate.set_defaults(func=cmd_prompts_generate)
+
+    p_owner = sub.add_parser("owner")
+    sub_owner = p_owner.add_subparsers(dest="owner_cmd", required=True)
+    p_owner_set = sub_owner.add_parser("set")
+    p_owner_set.add_argument("--bucket", required=True, choices=["info", "comparison", "decision", "usecase"])
+    p_owner_set.add_argument("--page", required=True)
+    p_owner_set.set_defaults(func=cmd_owner_map_set)
 
     p_adapter = sub.add_parser("adapter")
     sub_adapter = p_adapter.add_subparsers(dest="adapter_cmd", required=True)

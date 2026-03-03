@@ -21,6 +21,7 @@ def suggest_actions(prompts: List[Prompt], scans: List[ScanResult]) -> List[Dict
         citation_rate = sum(1 for r in rows if r.cited) / total
         recommendation_rate = sum(1 for r in rows if r.recommended) / total
 
+        owner_page = p.owner_page or f"/{p.bucket}/{p.id[:8]}"
         if mention_rate == 0:
             score = 100
             action = "Create dedicated answer page (definition + FAQ + evidence block)."
@@ -47,6 +48,7 @@ def suggest_actions(prompts: List[Prompt], scans: List[ScanResult]) -> List[Dict
             "score": score,
             "prompt": p.prompt,
             "bucket": p.bucket,
+            "owner_page": owner_page,
             "mention_rate": round(mention_rate, 4),
             "citation_rate": round(citation_rate, 4),
             "recommendation_rate": round(recommendation_rate, 4),

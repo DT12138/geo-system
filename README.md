@@ -41,3 +41,16 @@ This MVP stores data locally in JSON files for simplicity.
 - Run-level trend comparison (current run vs previous run)
 - Action scoring in weekly actions
 - Append mode for scan history
+
+## v0.4 highlights
+- Bucket-level trend tracking (mention delta per bucket)
+- Owner-page mapping CLI (`geo owner set --bucket ... --page ...`)
+- Weekly actions now include owner_page suggestions
+
+### Owner-page mapping
+```bash
+geo owner set --bucket info --page /what-is-tripo3d
+geo owner set --bucket comparison --page /tripo3d-vs-meshy
+geo owner set --bucket decision --page /best-ai-3d-tools
+geo owner set --bucket usecase --page /ai-3d-for-game-assets
+```
